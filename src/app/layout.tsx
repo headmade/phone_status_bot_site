@@ -1,3 +1,4 @@
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "./globals.scss";
 import '@fontsource-variable/montserrat';
 
@@ -18,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <AntdRegistry>
         {children}
+        </AntdRegistry>
       </body>
     </html>
   );
