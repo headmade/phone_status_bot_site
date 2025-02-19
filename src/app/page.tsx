@@ -8,9 +8,12 @@ import phone from '@/assets/phone.png'
 import bubble1 from '@/assets/icons/bubble1.svg'
 import buuble2 from '@/assets/icons/bubble2.png'
 import clear from '@/assets/icons/clear.svg'
-import problem from '@/assets/icons/problem.svg'
+import problem from '@/assets/icons/cross.svg'
 import headmade from '@/assets/icons/headmade.svg'
 
+
+import schedule from '@/assets/icons/schedule1.svg'
+import schedult_check from '@/assets/icons/schedule_check.png'
 
 import chatOk from '@/assets/chat_ok.png'
 import chatNot from '@/assets/chat_fake.png'
@@ -47,7 +50,7 @@ export default function Home() {
           <FeatureCard />
           <div className={styles.how_it_works}>
             <div className={styles.how_it_works_header}>
-              <p>Как это работает
+              <p>Быстрая проверка
               </p>
             </div>
             <div className={styles.how_it_works_dark}>
@@ -58,6 +61,22 @@ export default function Home() {
               <div className={styles.how_it_works_dark_item}>
                 <h1 className={styles.how_it_works_dark_title}>2. Бот автоматически проверяет каждый номер</h1>
                 <Image className={styles.bubbles} src={buuble2} alt="bubble1" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.how_it_works_low}>
+            <div className={styles.how_it_works_header}>
+              <p>Периодичная проверка
+              </p>
+            </div>
+            <div className={styles.how_it_works_dark}>
+              <div className={styles.how_it_works_dark_item}>
+                <h1 className={styles.how_it_works_dark_title}>1. Вы предоставляете список телефонных номеров</h1>
+                <Image className={styles.bubbles} src={schedule} alt="bubble1" />
+              </div>
+              <div className={styles.how_it_works_dark_item}>
+                <h1 className={styles.how_it_works_dark_title}>2. Бот периодически проверяет ваш список телефонных номеров на наличие проблем</h1>
+                <Image className={styles.bubbles} src={schedult_check} alt="bubble1" />
               </div>
             </div>
           </div>
@@ -93,9 +112,9 @@ export default function Home() {
       </Row>
       <Row className={styles.footer} justify={'center'} align={'middle'}>
         <Col className={styles.footer_wrapp}>
-        <Image className={styles.headmade} src={headmade} alt="headmade"/>
-        <p>Разработано <a href="https://headmade.pro/" target="_blank">HeadMade</a></p>
-        <p>&#169;	{year}</p>
+          <Image className={styles.headmade} src={headmade} alt="headmade" />
+          <p>Разработано <a href="https://headmade.pro/" target="_blank">HeadMade</a></p>
+          <p>&#169;	{year}</p>
         </Col>
       </Row>
     </div>
